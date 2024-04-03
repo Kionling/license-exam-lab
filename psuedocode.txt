@@ -1,0 +1,8 @@
+1. Start
+2. State a variable contatining the answer key in the form of a list 
+3. define a function that that initializes test 
+4. Declare the total number of questions on test
+5. Declare pass rate 
+6. Check for letters other than A,B,C,D and prompt user to pick a letters
+7. Create a varible that contains a boolean value of whether or not the user has passed the test
+8. End 
