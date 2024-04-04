@@ -29,3 +29,17 @@ Create a list 'correct_answers' with the answers provided (B, D, A, A, C, A, B, 
       Return False, 'count_correct', 'missed_questions'
     End If
   End Define
+
+  In the Main method
+    Call 'getStudentAnswers' and store the result in 'student_answers'
+    Call 'checkPassed' with 'student_answers' and store the results in 'passed', 'total_correct', 'questions_missed'
+    If 'passed' is True
+      Display "The student passed the exam."
+    Else
+      Display "The student failed the exam."
+    End If
+    Display "Total correct answers: " followed by 'total_correct'
+    Display "Questions missed: " followed by 'questions_missed'
+  End Main
+
+End
