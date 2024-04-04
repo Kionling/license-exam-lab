@@ -1,11 +1,9 @@
-def getStudentAnswers():
-    studentAnswers = []
-    for i in range(10):
-        studentAnswers.append(input("Enter the student's answer for question " + str(i + 1) + ": "))
-    return studentAnswers
-
-def getCorrectAnswers():
-    correctAnswers = ["B", "D", "A", "A", "C", "A", "B", "A", "C", "D"]
-    for i in range(10):
-        correctAnswers.append(input("Enter the correct answer for question " + str(i + 1) + ": "))
-    return correctAnswers
+def get_student_answers():
+    student_answers = []
+    for i in range(1, 21):
+        answer = 'A'  
+        while answer not in ('A', 'B', 'C', 'D'):
+            print("Invalid answer. Please enter A, B, C, or D.")
+            answer = 'A'  
+        student_answers.append(answer)
+    return student_answers
