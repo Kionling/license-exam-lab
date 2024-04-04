@@ -10,4 +10,22 @@ Create a list 'correct_answers' with the answers provided (B, D, A, A, C, A, B, 
       Append the student's answer to 'student_answers'
     End For
     Return 'student_answers'
-  End Defin
+  End Define
+
+
+  Define method 'checkPassed' with 'student_answers' as parameter
+    Set 'count_correct' to 0
+    Create an empty list 'missed_questions'
+    For each index in the range of 'student_answers'
+      If 'student_answers' at current index equals 'correct_answers' at current index
+        Increment 'count_correct'
+      Else
+        Append current index + 1 to 'missed_questions'
+      End If
+    End For
+    If 'count_correct' is greater than or equal to 15
+      Return True, 'count_correct', 'missed_questions'
+    Else
+      Return False, 'count_correct', 'missed_questions'
+    End If
+  End Define
