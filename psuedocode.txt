@@ -1,8 +1,13 @@
-1. Start
-2. State a variable contatining the answer key in the form of a list 
-3. define a function that that initializes test 
-4. Declare the total number of questions on test
-5. Declare pass rate 
-6. Check for letters other than A,B,C,D and prompt user to pick a letters
-7. Create a varible that contains a boolean value of whether or not the user has passed the test
-8. End 
+Create a list 'correct_answers' with the answers provided (B, D, A, A, C, A, B, A, C, D, B, C, D, A, D, C, C, B, D, A)
+
+  Define method 'getStudentAnswers'
+    Create an empty list 'student_answers'
+    For each question from 1 to 20
+      Ask for the student's answer
+      While the answer is not one of ('A', 'B', 'C', 'D')
+        Ask again for the student's answer
+      End While
+      Append the student's answer to 'student_answers'
+    End For
+    Return 'student_answers'
+  End Defin
